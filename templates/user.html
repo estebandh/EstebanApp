@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Users {% endblock %}
+
+{% block content %}
+{# This is a comment in template#} {% if uname=="esteban" %}
+<h2>Welcome Master</h2> {% elif uname=="shae" %}
+<h2>Welcome loser</h2> {% elif uname=="harry" %}
+<h2>Welcome Professor</h2> {% else %}
+<h2>Welcome Student {{uname}}</h2> {% endif %}
+
+<!--<h2>The following is an image:</h2>
+<img src="{{ url_for('static', filename='img/cali.png') }}" alt=""> -->
+{% endblock %}
